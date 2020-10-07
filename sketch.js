@@ -38,7 +38,7 @@ function setup() {
 function draw() {
   rectMode(CENTER);
   background(249,235,198);
-  
+
   bob1.display();
   bob2.display();
   bob3.display();
@@ -52,5 +52,12 @@ function draw() {
   rope5.display();
 }
 
+function keyPressed()
+{
+  if (keyCode===UP_ARROW)
+  {
+   Matter.Body.applyForce(bob1.body,bob1.body.position,{x:-50,y:-45});
+  }
+}
 
 
