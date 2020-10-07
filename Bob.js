@@ -4,9 +4,9 @@ class Bob
   {
     var options = 
     {
-    isStatic:true,
-    'restitution':0.3,
-    'friction':0.5,
+    isStatic:false,
+    'restitution':1,
+    'friction':0,
     'density':1.2
     }
     this.x = x;
